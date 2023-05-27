@@ -1,0 +1,173 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Project Page</title>
+
+    <link rel="stylesheet" href="assets/project.css" >
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-left">
+        <ul>
+          <img src="images/dumbways.png" alt="dumbways" >
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project.html">My Project</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <a href="contact-me.html">Contact Me</a>
+      </div>
+    </nav>
+
+      <div class="blog-form">
+        <div class="form-container">
+          <form onsubmit="getBlog(event)">
+            <center><h1>Create Project Page</h1></center>
+            <div class="input-text">
+              <label for="title">Project Name</label>
+              <input id="title"/>
+            </div>
+
+            <div class="date">
+              <div>
+                <label for="startDate">Start Date</label>
+                <input type="date" id="startDate"/>
+              </div>
+              <div>
+                <label for="endDate">End Date</label>
+                <input type="date" id="endDate"/>
+              </div>
+            </div>
+            
+            <div>
+              <label for="projectDescription">Description</label>
+              <textarea id="projectDescription" class="input-text"></textarea>
+            </div>
+
+            <div>
+              <label for="technologies">Technologies</label>
+            </div>
+              
+            <div class="checkBox">
+              <div>
+                <input class="nodeBox" type="checkbox" id="nodeJS" value="nodeJS">
+                <label for="nodeJS">Node Js</label>
+                <span class="checkmark"></span>
+              </div>
+              <div>
+                <input class="nodeBox" type="checkbox" id="nextJS" value="nextJS">
+                <label for="nextJS">Next Js</labe>
+                <span class="checkmark"></span>
+              </div>
+              <div>
+                <input class="nodeBox" type="checkbox" id="typeScript" value="typeScript">
+                <label for="typeScript">TypeScript</label>
+                <span class="checkmark"></span>
+              </div>  
+              <div>
+                <input class="nodeBox" type="checkbox" id="reactJS" value="reactJS">
+                <label for="reactJS">React Js</label>
+                <span class="checkmark"></span>
+              </div>
+            </div>   
+          
+            <div>
+              <label>Upload Image</label>
+              <div class="inputImage">
+                <label for="imageProject">
+                  <input type="file" id="imageProject" name="filename">
+                </label> 
+              </div>
+            </div>
+
+            <div class="submitButton">
+              <button onclick="formAlert()">Post Project</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+    <hr class="line"/>
+      <div class="projectDetail" id="project">
+      <center><h1>My Project</h1></center>
+        <div class="listProject">
+          <div class="itemProject">
+            <div class="header">
+              <img src="images/assasin.png" alt="assasin" class="imageP"/>
+                <div class="titleP">
+                  <b>
+                    <a href="project-detail.html" target="_blank"
+                    >Ameno ameno latire Latiremo Dori me</a>
+                  </b>
+                </div>
+                <div class="detailDate">
+                  12 July 2023 - 15 August 2023 
+                 </div>
+                 <div class="author">
+                   <p>Nafiisan N. Achmad</p>
+                 </div>
+            </div>
+            <div class="projectContent">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis risus ut mi euismod sodales. Mauris id quam ut massa sodales faucibus consectetur sit amet dolor. Fusce lobortis velit lectus, et consequat arcu convallis at. Maecenas ac interdum tortor. 
+                Sed rhoncus elementum magna non mollis. Fusce pellentesque ligula eu purus dignissim, in placerat tortor lacinia. Sed at luctus diam. Duis pulvinar quam sem, quis tempus felis euismod id.
+              </p>
+            </div>
+            <div class="technology">
+              <img src="images/nodejs.png" alt="nodejs">
+              <img src="images/reactjs.png" alt="reactjs">
+              <img src="images/nextjs.png" alt="nextjs">
+              <img src="images/typescript.png" alt="typescript">
+            </div>
+            <div class="btnGroups">
+                <button class="btn">Edit</button>
+                <button class="btn">Delete</button>
+            </div>
+          </div>
+        </div> 
+        
+        <div class="listProject">
+          <div class="itemProject">
+            <div class="header">
+              <img src="images/assasin.png" alt="assasin" class="imageP"/>
+                <div class="titleP">
+                  <b>
+                    <a href="project-detail.html" target="_blank"
+                    >Ameno ameno latire Latiremo Dori me</a>
+                  </b>
+                </div>
+                <div class="detailDate">
+                 12 July 2023 - 15 August 2023 
+                </div>
+                <div class="author">
+                  <p>Nafiisan N. Achmad</p>
+                </div>
+            </div>
+            <div class="projectContent">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis risus ut mi euismod sodales. Mauris id quam ut massa sodales faucibus consectetur sit amet dolor. Fusce lobortis velit lectus, et consequat arcu convallis at. Maecenas ac interdum tortor. 
+                Sed rhoncus elementum magna non mollis. Fusce pellentesque ligula eu purus dignissim, in placerat tortor lacinia. Sed at luctus diam. Duis pulvinar quam sem, quis tempus felis euismod id.
+              </p>
+            </div>
+            <div class="technology">
+              <img src="images/nodejs.png" alt="nodejs">
+              <img src="images/reactjs.png" alt="reactjs">
+              <img src="images/nextjs.png" alt="nextjs">
+              <img src="images/typescript.png" alt="typescript">
+            </div>
+            <div class="btnGroups">
+                <button class="btn">Edit</button>
+                <button class="btn">Delete</button>
+            </div>
+          </div>
+        </div> 
+        
+      </div>
+    </body>
+      <script src="assets/project.js"></script>   
+</html>
+    
